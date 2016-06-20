@@ -1,0 +1,86 @@
+/* Header Styling */
+
+.jumbotron {
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: brown;
+    color: white;
+}
+
+/* Navbar Styling */
+
+.navbar-nav {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+/* Panels Styling */
+
+.items {
+    font-size: 15px;
+    color: brown;
+}
+
+.items:hover{
+    font-size: 20px;
+    text-decoration: none;
+    color: brown;
+}
+
+.glyphicon-plus-sign {
+    font-size: 15px;
+    color: brown;
+}
+
+.glyphicon-plus-sign:hover {
+    opacity: 0.6;
+}
+
+/* Item Page Styling*/
+
+img {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    max-width: 250px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+/* Other Pages */
+
+form {
+    margin-bottom: 20px;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 420px) {
+    img {
+        max-width: 150px;
+    }
+    .info {
+        margin-left: 0 !important;
+    }
+    .info>h4 {
+        font-size: 15px;
+    }
+    .info>p {
+        font-size: 12px;
+    }
+    .panel-heading>h4 {
+        font-size: 15px;
+    }
+    .items {
+        font-size: 12px;
+    }
+    .items:hover {
+        font-size: 16px;
+    }
+    .glyphicon-plus-sign {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4 col-md-offset-1 col-xs-5 col-xs-offset-1">
+        <div class="panel panel-danger">
+            <div class="panel-heading"><h4>Houses</h4></div>
+            <div class="panel-body">
+                {% for category in categories %}
+                <a class="items" href="{{url_for('category_page', category=category.name)}}">{{category.name}}</a><br><br>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-xs-5">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h4>Characters
+                {% if 'username' in session %}
+                <a href="{{url_for('add_item', cat_name='Baratheon')}}"><span class="glyphicon glyphicon-plus-sign"></span></a>
+                {% endif %}
+                </h4>
+            </div>
+            <div class="panel-body">
+                {% for item in items %}
+                <a class="items" href="{{url_for('item_page', item=item.name)}}">{{item.name}} ({{item.cat_name}})</a><br><br>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
