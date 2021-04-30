@@ -35,7 +35,7 @@ pyinotify==0.9.4
 pyserial==2.6
 redis==2.10.5
 requests==2.20.0
-rsa==4.1
+rsa==4.7
 simplejson==3.3.1
 six==1.10.0
 ssh-import-id==3.21
